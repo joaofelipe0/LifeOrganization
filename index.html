@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LifeOrganization</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <header>
         <div id="logo">
-            <h1>Life<span>Organization</span></h1>
+            <h1>Life<span id="text">Organization</span></h1>
         </div>
-        <div>
-            <a href="btn-mobile"><img src="" alt=""></a>
+        <div id="menu-content">
+            <div onclick="myFunction()" id="content-button">
+                <a href="#"><img src="images/Vector.svg"></a>
+            </div>
+            <nav id="list-menu">
+                <ul >
+                    <li><a href="#">Caledário</a></li>
+                    <li><a href="#">Lista de tarefas</a></li>
+                    <li><a href="#">Lembretes</a></li>
+                    <li><a href="#">Central de ajuda</a></li>
+                </ul>
+            </nav>    
         </div>
+        <script>
+            nav = document.getElementById("list-menu")
+            function myFunction() {
+                var nav = document.getElementById("list-menu");
+                nav.classList.toggle("active")
+            }
+        </script>
     </header>
+    
 </body>
 
 </html>
