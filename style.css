@@ -17,7 +17,7 @@
     font-weight: 400;
 }
 /*header*/
-    header{
+    #header{
         display: flex;
         justify-content: space-between;
         align-items: ;  
@@ -170,6 +170,65 @@
     color: var(--color-azul);
 }
 /*Desktop*/
-@media screen (max-width: 500px) {
-    
+@media only screen and (min-width: 700px) {
+    /*header*/
+    #header{
+        display: flex;
+        position: relative;
+    }
+    na v{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav{
+        
+    }
+    #list-menu{
+        display: flex;
+       
+        justify-content: flex-end;
+        position: absolute;
+
+        background: none;
+        top:0;
+        position: absolute;
+        height: auto;  
+    }
+    #list-menu>ul{
+        gap: 2rem;
+
+    }
+    #menu-icon{
+        display: none;
+    }
+    div#btns{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        margin-right: var(--margin);
+    }
+    /*main*/
+    #intro{
+        display:flex;
+        align-items: center;
+        max-width: 70rem;
+        width: auto;
+        margin: auto;
+        margin-top: 5rem;
+    }
+    #intro>h2{
+        font-size: 2.5rem;
+    }
+    .btn-pri{
+        display: none;
+    }
+    .content-divs{
+        flex-direction: row;
+        margin: 0;
+        justify-content: center;
+        margin-top: 3.5rem;
+    }
+    .divs>img{
+        max-height: 19.37rem;
+    }
 }
