@@ -52,8 +52,6 @@
     #menu-content{
         display: block;
         align-items: flex-end;
-        position: ;
-        
     }
     #list-menu.active{
         display: block;
@@ -71,8 +69,10 @@
         font-weight: 700;
         left: 0;
         width: 100%;
+        height: 100vh;
         margin-top: 1rem;
         background-color: white;
+        z-index: 1000;
     }
     #list-menu>li{
         padding:0.3rem;
@@ -102,10 +102,10 @@
         padding: 1rem;
         font-weight: 700;
     }
-    #btn-ent{
+    .btn-ent{
         background-color: var(--color-rosa);
     }
-    #btn-ent>a:hover{
+    .btn-ent>a:hover{
         color: var(--color-azul);
     }
     #btn-cad{
@@ -128,4 +128,48 @@
     font-size: 1rem;
     color: var(--color-azul);
     font-style: bold;
+}
+.content-divs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.divs>img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.divs>h2{
+    font-family: Jockey;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-azul);
+    font-style: bold;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.btn-pri{
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 8.125rem;
+    height: 2.92rem;
+    border-radius: 9px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--color-rosa)
+}
+.btn-pri>a{
+    color: white;
+    font-family: Jockey;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+.btn-pri>a:hover{
+    color: var(--color-azul);
+}
+/*Desktop*/
+@media screen (max-width: 500px) {
+    
 }
